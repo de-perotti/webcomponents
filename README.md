@@ -18,5 +18,5 @@
 ## Part 2
 
 - [ ] Define whether it's easier to do a webcomponent or just go with plain javascript 
-- [ ] Consume it from Quero Bolsa, using Home page as a playground for faster feedback
+- [ ] Consume it from qb, using Home page as a playground for faster feedback
     - Using the webcomponent in a demand login route makes sure the client is logged in
