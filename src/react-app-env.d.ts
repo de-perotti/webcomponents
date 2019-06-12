@@ -10,8 +10,8 @@ declare namespace NodeJS {
 }
 
 declare module JSX {
-  import { ButtonComponent } from './components/button/button-component';
-  import { CounterComponent } from './components/counter/counter-component';
+  import { ButtonComponent } from './button/button-component';
+  import { CounterComponent } from './counter/counter-component';
 
   interface IntrinsicElements {
     'button-component': ButtonComponent;

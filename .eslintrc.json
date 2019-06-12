@@ -27,7 +27,8 @@
     "import/no-unresolved": "error",
     "import/no-default-export": "error",
     "no-underscore-dangle": 0,
-    "react/destructuring-assignment": 0
+    "react/destructuring-assignment": 0,
+    "spaced-comment": 0
   },
   "settings": {
     "parser": "typescript-eslint-parser",
