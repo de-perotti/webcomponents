@@ -2,7 +2,7 @@
 
 ## Part 1
 
-- [ ] Make the simplest web component possible
+- [x] Make the simplest web component possible
 - [ ] Host it on NPM
 - [ ] Use it from another React project as a simple webcomponent
 - [ ] Give it powers

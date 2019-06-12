@@ -2,6 +2,8 @@
   "name": "webcomponents",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "~2.2.10",
     "classnames": "~2.2.6",
