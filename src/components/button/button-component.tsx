@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from './Button';
 import { BaseComponent } from '../base/base-component';
 
-export class ButtonComponent extends BaseComponent {
+export class ButtonComponent extends BaseComponent implements Partial<HTMLButtonElement> {
   public static NAME = 'button-component';
 
   connectedCallback() {
