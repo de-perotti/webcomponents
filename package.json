@@ -6,9 +6,7 @@
   "module": "dist/index.js",
   "babel": {
     "presets": [
-      "react",
-      "env",
-      "stage-2"
+      "react-app"
     ]
   },
   "dependencies": {
@@ -21,7 +19,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "build:components": "export NODE_ENV=production && rm -rf dist && mkdir dist && tsc -p tsconfig.components.json",
+    "build:components": "bash ./publish-components.sh",
     "test": "node scripts/test.js"
   },
   "browserslist": {
@@ -85,22 +83,18 @@
     "@babel/plugin-transform-react-jsx-self": "~7.2.0",
     "@babel/plugin-transform-react-jsx-source": "~7.2.0",
     "@svgr/webpack": "4.1.0",
-    "@types/classnames": "^2.2.8",
+    "@types/classnames": "~2.2.8",
     "@types/jest": "24.0.13",
     "@types/node": "12.0.8",
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "~10.0.1",
     "babel-jest": "~24.8.0",
-    "babel-loader": "8.0.5",
+    "babel-loader": "~8.0.6",
     "babel-plugin-named-asset-import": "~0.3.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "~9.0.0",
-    "babel-preset-stage-2": "^6.24.1",
     "camelcase": "~5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -136,6 +130,7 @@
     "postcss-safe-parser": "4.0.1",
     "react-dev-utils": "~9.0.1",
     "resolve": "1.10.0",
+    "rimraf": "~2.6.3",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
     "style-loader": "0.23.1",
