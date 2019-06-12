@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import React from 'react';
 
-export class Counter extends React.Component {
+class ActualCounter extends React.Component {
   state = { count: 0 };
 
   render() {
@@ -14,7 +14,7 @@ export class Counter extends React.Component {
             type: 'button',
             onClick: () => {
               console.log('adding up');
-              this.setState((state: typeof Counter.prototype.state) => ({
+              this.setState((state: typeof ActualCounter.prototype.state) => ({
                 count: state.count + 1,
               }));
             },
@@ -27,7 +27,7 @@ export class Counter extends React.Component {
             type: 'button',
             onClick: () => {
               console.log('subtracting up');
-              this.setState((state: typeof Counter.prototype.state) => ({
+              this.setState((state: typeof ActualCounter.prototype.state) => ({
                 count: state.count - 1,
               }));
             },
@@ -38,3 +38,5 @@ export class Counter extends React.Component {
     );
   }
 }
+
+export const Counter = () => <ActualCounter />;
